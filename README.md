@@ -1,24 +1,55 @@
 # IT 대기업 현업 개발자와 함께 하는 SW개발 실무(백엔드)
 
 ### 1주차
-##### 1. JDK 설치(11 version)
+##### ✔ JDK 설치(11 version)
 ![image](https://user-images.githubusercontent.com/53250432/201106800-212ede25-5d82-4b56-97b3-ebb8828b16b2.png)
 
-##### 2. 이클립스, 스프링 설치
+##### ✔ 이클립스, 스프링 설치
 ![image](https://user-images.githubusercontent.com/53250432/201106562-0e54af81-15ff-4960-8311-d2dd75dca9d6.png)
 
-##### 3. Hello World 출력
+##### ✔ Hello World 출력
 ![image](https://user-images.githubusercontent.com/53250432/201106080-e7ef0ddb-3103-4173-a694-ac66a6742e1e.png)
 
-##### 4. db 설정
+##### ✔ db 설정(DataGrip 이용)
 ![Untitled](https://user-images.githubusercontent.com/53250432/201106960-c224eb89-37c8-407a-9148-8ebd72a22713.png)
 
-##### 5. 
+##### ✔ 스프링, myBatis, mariaDB 연동
+![image](https://user-images.githubusercontent.com/53250432/201114843-2ab115f6-6769-4eb5-b021-9362108fd411.png)
+
+###### 중간퀴즈 : MovieVO.java 작성해보기
+```
+package com.devfun.vo;
+
+public class MovieVO {
+	private String movie_name;
+	private String director;
+	private String types;
+	
+	public String getMovie_name() {
+		return movie_name;
+	}
+	public void setMovie_name(String movie_name) {
+		this.movie_name = movie_name;
+	}
+	public String getDirector() {
+		return director;
+	}
+	public void setDirector(String director) {
+		this.director = director;
+	}
+	public String getTypes() {
+		return types;
+	}
+	public void setTypes(String types) {
+		this.types = types;
+	}	
+}
+```
 
 ### 에러
 ##### 에러 1
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ceaada0f-f4f6-4181-bb8a-f2c7c7ef7dc8/Untitled.png)
+![image](https://user-images.githubusercontent.com/53250432/201116935-0ad6c692-3cfd-478e-b659-6bf66a38b861.png)
 
 찾아보니 다음과 같은 이유로 위와 같은 문제점이 발생했다.
 
@@ -44,3 +75,17 @@
 ```
 위의 코드를 pom.xml에 추가한 후 clean 해주었다.
 
+##### 에러 3
+**context:component-scan" is not bound**
+context:component-scan 을 인식하지 못하는 에러. 
+>> 해결
+root-context.xml 파일에서 다음과 같이 수정
+```
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	https://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+```
