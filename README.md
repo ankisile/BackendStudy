@@ -76,7 +76,7 @@ public class MovieVO {
 위의 코드를 pom.xml에 추가한 후 clean 해주었다.
 
 #### ‼ 에러 3
-<<**context:component-scan" is not bound**>>
+<<**context:component-scan" is not bound>>**
 context:component-scan 을 인식하지 못하는 에러. 
 >> 해결
 root-context.xml 파일에서 다음과 같이 수정
