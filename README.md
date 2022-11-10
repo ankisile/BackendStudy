@@ -1,23 +1,22 @@
 # IT 대기업 현업 개발자와 함께 하는 SW개발 실무(백엔드)
 
 ### 1주차
-1. JDK 설치(11 version)
+##### 1. JDK 설치(11 version)
 ![image](https://user-images.githubusercontent.com/53250432/201106800-212ede25-5d82-4b56-97b3-ebb8828b16b2.png)
 
-2. 이클립스, 스프링 설치
+##### 2. 이클립스, 스프링 설치
 ![image](https://user-images.githubusercontent.com/53250432/201106562-0e54af81-15ff-4960-8311-d2dd75dca9d6.png)
 
-3. Hello World 출력
+##### 3. Hello World 출력
 ![image](https://user-images.githubusercontent.com/53250432/201106080-e7ef0ddb-3103-4173-a694-ac66a6742e1e.png)
 
-4. db 설정
+##### 4. db 설정
 ![Untitled](https://user-images.githubusercontent.com/53250432/201106960-c224eb89-37c8-407a-9148-8ebd72a22713.png)
 
-5. 
+##### 5. 
 
-######에러
-
-설치 에러
+#### 에러
+##### 1. 스프링 설치 에러
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ceaada0f-f4f6-4181-bb8a-f2c7c7ef7dc8/Untitled.png)
 
