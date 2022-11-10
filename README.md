@@ -47,7 +47,7 @@ public class MovieVO {
 ```
 
 ### 에러
-##### ‼ 에러 1
+#### ‼ 에러 1
 
 ![image](https://user-images.githubusercontent.com/53250432/201116935-0ad6c692-3cfd-478e-b659-6bf66a38b861.png)
 
@@ -61,7 +61,7 @@ public class MovieVO {
 
 ****Eclipse 재설치. 2021-12 version으로 재설치 했다.****
 
-##### ‼ 에러 2
+#### ‼ 에러 2
 
 **The absolute uri: http://java.sun.com/jsp/jstl/core cannot be resolved in either web.xml or the jar files deployed with this application**
 >> 해결
@@ -75,7 +75,7 @@ public class MovieVO {
 ```
 위의 코드를 pom.xml에 추가한 후 clean 해주었다.
 
-##### ‼ 에러 3
+#### ‼ 에러 3
 **context:component-scan" is not bound**
 context:component-scan 을 인식하지 못하는 에러. 
 >> 해결
