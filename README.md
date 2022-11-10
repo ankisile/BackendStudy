@@ -90,3 +90,5 @@ root-context.xml 파일에서 다음과 같이 수정
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 ```
+### Question
+#### ❓ mapper vs repository
