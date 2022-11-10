@@ -15,8 +15,8 @@
 
 ##### 5. 
 
-#### 에러
-##### 1. 스프링 설치 에러
+### 에러
+##### 에러 1
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ceaada0f-f4f6-4181-bb8a-f2c7c7ef7dc8/Untitled.png)
 
@@ -28,25 +28,19 @@
 
 >> 해결
 
-****Eclipse 재설치****
+****Eclipse 재설치. 2021-12 version으로 재설치 했다.****
 
-에러 2
+##### 에러 2
 
 **The absolute uri: http://java.sun.com/jsp/jstl/core cannot be resolved in either web.xml or the jar files deployed with this application**
-
-
-
+>> 해결
 ```
   <dependency>
     <groupId>jstl</groupId>
-
-		<artifactId>jstl</artifactId>
-
-		<version>1.2</version>
-
-	</dependency>
+	<artifactId>jstl</artifactId>
+	<version>1.2</version>
+   </dependency>
 
 ```
-
-추가 후 clean 해줌
+위의 코드를 pom.xml에 추가한 후 clean 해주었다.
 
