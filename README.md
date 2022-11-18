@@ -95,12 +95,35 @@ root-context.xml 파일에서 다음과 같이 수정
 
 ---
 ## 2주차
-#### Rest API
+### ✔Rest API
 * API(Application Programming Interface)란
 	*  데이터와 기능의 집합을 제공하여 컴퓨터 프로그램간 상호작용을 촉진하며, 서로 정보를 교환가능 하도록 하는 것
-REST API의 정의
+* REST란
+	* 
+* REST API의 정의
 REST 기반으로 서비스 API를 구현한 것
 최근 OpenAPI(누구나 사용할 수 있도록 공개된 API: 구글 맵, 공공 데이터 등), 마이크로 서비스(하나의 큰 애플리케이션을 여러 개의 작은 애플리케이션으로 쪼개어 변경과 조합이 가능하도록 만든 아키텍처) 등을 제공하는 업체 대부분은 REST API를 제공한다.
 https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
-#### HTTP란?
-#### 브라우저에서 서버까지의 흐름
+### ✔HTTP
+* **Hypertext Transfer Protocol**
+* HTTP는 서버와 클라이언트가 인터넷상에서 데이터를 주고 받기 위한 프로토콜(protocol)
+* 
+
+### ✔브라우저에서 서버까지의 흐름
+1. 사용자의 URL 요청
+2. 브라우저의 URL 분석
+> #####URL
+> * 인터넷에서의 자원의 위치  
+> ![image](https://user-images.githubusercontent.com/53250432/202698836-70723ef9-461d-46d0-8eee-877fa52587d8.png)  
+> Protocol(프로토콜) : 브라우저가 어떤 프로토콜을 사용해야 하는 지, 예를들어 http, https, ftp가 있다.   
+> Domain Name(도메인 이름) : 어떤 웹 서버가 요구되는 지, 도메인 이름이 아닌 IP를 직접 입력해도 된다.   
+> Port(포트) : 기술적으로 웹 서버에서 자원을 접근하기 위해 사용되는 gate   
+> Path to the file(경로) : 자원에 대한 경로로, 초기 웹에서는 웹 서버 상에서의 물리적 파일 위치를 나타냈지만, 요즘에는 실제 물리적 경로를 나타내지 않고, 웹 서버에서 추상화하여 보여준다.   
+> parametas(파라미터) : &기호 들로 구분된 key/value 짝을 이룬 리스트이다. 웹 서버는 자원을 반환하기 전에 추가적인 작업을 위해 파라미터를 사용할 수 있다.   
+> Anchor(닻) : 일종의 자원의 북마크로, 웹에서 해당 북마크 지점을 보여주기 위해 브라우저에게 방향을 알려주는 역할을 한다. 또한, fragment identifier(부분 식별자)라고 알려져, 요청이 서버에 절대 보내지지 않는다.   
+3. HSTS 목록 조회 
+> **HTTP Strict Transport Security** 
+
+
+### ✔SW 활용도 API
+
