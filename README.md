@@ -107,6 +107,12 @@ https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
 ### ✔HTTP
 * **Hypertext Transfer Protocol**
 * HTTP는 서버와 클라이언트가 인터넷상에서 데이터를 주고 받기 위한 프로토콜(protocol)
+* 클라이언트-서버 구조
+* 무상태 프로토콜(Stateless)
+	*서버가 클라이언트 상태를 보존하지 않음
+장점 : 서버 확장성 높음 (스케일 아웃)
+단점 : 클라이언트가 추가 데이터 전송
+* 비 연결성(Connectionless)
 * 
 
 ### ✔브라우저에서 서버까지의 흐름
@@ -148,4 +154,4 @@ https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
 9. 브라우저에서 응답을 해석 및 출력
 
 ### ✔SW 활용도 API
-
+SW 활용도 API.docx 파일
