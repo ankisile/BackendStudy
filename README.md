@@ -1,5 +1,6 @@
 # IT 대기업 현업 개발자와 함께 하는 SW개발 실무(백엔드)
-
+[1. 1주차](###-1주차)
+---
 ### 1주차
 ##### ✔ JDK 설치(11 version)
 ![image](https://user-images.githubusercontent.com/53250432/201106800-212ede25-5d82-4b56-97b3-ebb8828b16b2.png)
@@ -92,3 +93,7 @@ root-context.xml 파일에서 다음과 같이 수정
 ```
 ### Question
 #### ❓ mapper vs repository
+---
+### 2주차
+#### Rest API
+##### HTTP란?
