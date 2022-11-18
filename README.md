@@ -99,21 +99,24 @@ root-context.xml 파일에서 다음과 같이 수정
 * API(Application Programming Interface)란
 	*  데이터와 기능의 집합을 제공하여 컴퓨터 프로그램간 상호작용을 촉진하며, 서로 정보를 교환가능 하도록 하는 것
 * REST란
-	* 
+	* HTTP URI(Uniform Resource Identifier)를 통해 자원(Resource)을 명시하고,
+	* HTTP Method(POST, GET, PUT, DELETE, PATCH 등)를 통해
+	* 해당 자원(URI)에 대한 CRUD Operation을 적용하는 것
 * REST API의 정의
-REST 기반으로 서비스 API를 구현한 것
-최근 OpenAPI(누구나 사용할 수 있도록 공개된 API: 구글 맵, 공공 데이터 등), 마이크로 서비스(하나의 큰 애플리케이션을 여러 개의 작은 애플리케이션으로 쪼개어 변경과 조합이 가능하도록 만든 아키텍처) 등을 제공하는 업체 대부분은 REST API를 제공한다.
-https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
+	* REST 기반으로 서비스 API를 구현한 것
+	* 최근 OpenAPI(누구나 사용할 수 있도록 공개된 API: 구글 맵, 공공 데이터 등), 마이크로 서비스(하나의 큰 애플리케이션을 여러 개의 작은 애플리케이션으로 쪼개어 변경과 조합이 가능하도록 만든 아키텍처) 등을 제공하는 업체 대부분은 REST API를 제공한다.
+
 ### ✔HTTP
 * **Hypertext Transfer Protocol**
 * HTTP는 서버와 클라이언트가 인터넷상에서 데이터를 주고 받기 위한 프로토콜(protocol)
 * 클라이언트-서버 구조
 * 무상태 프로토콜(Stateless)
-	*서버가 클라이언트 상태를 보존하지 않음
-장점 : 서버 확장성 높음 (스케일 아웃)
-단점 : 클라이언트가 추가 데이터 전송
+	* 서버가 클라이언트 상태를 보존하지 않음
+	* 장점 : 서버 확장성 높음 (스케일 아웃)
+	* 단점 : 클라이언트가 추가 데이터 전송
 * 비 연결성(Connectionless)
-* 
+	* 비 연결성을 가지는 HTTP에서는 실제로 요청을 주고 받을 때만 연결을 유지하고 응답을 주고나면 TCP/IP 연결을 끊는다.
+	* 이를 통해 최소한의 자원으로 서버 유지를 가능하게 한다.
 
 ### ✔브라우저에서 서버까지의 흐름
 1. 사용자의 URL 요청
