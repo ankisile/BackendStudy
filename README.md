@@ -1,6 +1,7 @@
 # IT 대기업 현업 개발자와 함께 하는 SW개발 실무(백엔드)
 - [1주차](#1주차)
 - [2주차](#2주차)
+- [3주차](#3주차)
 ---
 ## 1주차
 ##### ✔ JDK 설치(11 version)
@@ -156,5 +157,14 @@ root-context.xml 파일에서 다음과 같이 수정
 8. HTTP(HTTPS) 프로토콜로 요청, 응답
 9. 브라우저에서 응답을 해석 및 출력
 
-### ✔SW 활용도 API
-SW 활용도 API.docx 파일
+---
+## 3주차
+##### ✔ SpringBoot 개발환경 세팅
+![image](https://user-images.githubusercontent.com/53250432/203898090-68353c8a-1a99-4c5e-b9dd-916e679bddb8.png)
+##### ✔ DB 테이블 생성
+###### request Code 테이블
+![image](https://user-images.githubusercontent.com/53250432/203905504-0cc95f1a-5ef2-42f9-9b22-29259541facc.png)
+###### request Info 테이블
+![image](https://user-images.githubusercontent.com/53250432/203905582-4caf8b05-0e76-41ab-8cf7-a9c22ea5f506.png)
+###### user 테이블
+![image](https://user-images.githubusercontent.com/53250432/203909723-67aa4397-c90c-41e8-9925-1e43c460a570.png)
