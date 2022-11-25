@@ -169,10 +169,10 @@ root-context.xml 파일에서 다음과 같이 수정
 ###### user 테이블
 ![image](https://user-images.githubusercontent.com/53250432/203909723-67aa4397-c90c-41e8-9925-1e43c460a570.png)
 ##### ‼ [20년도 로그인수 API ]스프링부트, Mybatis, mariadb 연동
-![image](https://user-images.githubusercontent.com/53250432/203996998-62208940-75ea-4e8c-97be-ae3334b6d384.png)
-intellij에서 계속 시도하고 있는데 어디서 문제인지 모르겠습니다..
-Invalid bound statement (not found) 에러인것 같아 찾아서 다 고쳐봤는데도 계속 저 상태여서 어느 부분에서 문제가 생긴건지 모르겠습니다.
-pom.xml에서 java version만 11로 바꿔준 상태이고 나머지는 똑같은 상태입니다!
+![image](https://user-images.githubusercontent.com/53250432/203996998-62208940-75ea-4e8c-97be-ae3334b6d384.png)    
+intellij에서 계속 시도하고 있는데 어디서 문제인지 모르겠습니다..    
+Invalid bound statement (not found) 에러인것 같아 찾아서 다 고쳐봤는데도 계속 저 상태여서 어느 부분에서 문제가 생긴건지 모르겠습니다.    
+pom.xml에서 java version만 11로 바꿔준 상태이고 나머지는 똑같은 상태입니다!    
 코드는 3주차 폴더 안에 올려두었습니다!
 
 ##### ✔ SW활용 현황 통계 API 구축을 위한 SQL
