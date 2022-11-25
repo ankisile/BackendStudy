@@ -168,3 +168,14 @@ root-context.xml 파일에서 다음과 같이 수정
 ![image](https://user-images.githubusercontent.com/53250432/203905582-4caf8b05-0e76-41ab-8cf7-a9c22ea5f506.png)
 ###### user 테이블
 ![image](https://user-images.githubusercontent.com/53250432/203909723-67aa4397-c90c-41e8-9925-1e43c460a570.png)
+##### ✔ [20년도 로그인수 API ]스프링부트, Mybatis, mariadb 연동
+
+
+##### ✔ SW활용 현황 통계 API 구축을 위한 SQL
+```	
+select count(distinct userID) from statistic.requestInfo where LEFT(createDate, 4) = #{yearMonth};
+select count(distinct userID) from statistic.requestInfo where LEFT(createDate, 6) = #{yearMonthDay};
+select round(avg(loginNum)) from (select count(*) as loginNum from statistic.requestInfo ri where ri.requestCode = 'L' group by LEFT(createDate, 4)) as classification;
+select count(*) from statistic.requestInfo ri where ri.requestCode = 'L';
+select count(*) from statistic.requestInfo r join statistic.user u on r.userID = u.USERNAME where LEFT(r.createDate, 4) =  #{yearMonth}  and  u.HR_ORGAN = #{organization} and r.requestCode = 'L';
+```
