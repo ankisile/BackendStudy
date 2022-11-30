@@ -2,6 +2,7 @@
 - [1주차](#1주차)
 - [2주차](#2주차)
 - [3주차](#3주차)
+- [4주차](#4주차)
 ---
 ## 1주차
 ##### ✔ JDK 설치(11 version)
@@ -168,12 +169,10 @@ root-context.xml 파일에서 다음과 같이 수정
 ![image](https://user-images.githubusercontent.com/53250432/203905582-4caf8b05-0e76-41ab-8cf7-a9c22ea5f506.png)
 ###### user 테이블
 ![image](https://user-images.githubusercontent.com/53250432/203909723-67aa4397-c90c-41e8-9925-1e43c460a570.png)
-##### ‼ [20년도 로그인수 API ]스프링부트, Mybatis, mariadb 연동
-![image](https://user-images.githubusercontent.com/53250432/203996998-62208940-75ea-4e8c-97be-ae3334b6d384.png)    
-intellij에서 계속 시도하고 있는데 어디서 문제인지 모르겠습니다..    
-Invalid bound statement (not found) 에러인것 같아 찾아서 다 고쳐봤는데도 계속 저 상태여서 어느 부분에서 문제가 생긴건지 모르겠습니다.    
-pom.xml에서 java version만 11로 바꿔준 상태이고 나머지는 똑같은 상태입니다!    
-코드는 settingweb_boot로 올려두었습니다!
+##### ‼ [20년도 로그인수 API ]스프링부트, Mybatis, mariadb 연동 -> eclipse 상에서 다시 시도하니 해결
+![image](https://user-images.githubusercontent.com/53250432/204781792-b653af24-2d9d-47f4-8983-4acb91e267f2.png)
+IntelliJ에서 계속 시도하였으나 계속 Invalid bound statement (not found) exception이 전달되고 해결되지 않음.   
+이부분은 추후에 다시 찾아봐야 된다. 
 
 ##### ✔ SW활용 현황 통계 API 구축을 위한 SQL
 ```	
@@ -183,3 +182,6 @@ select round(avg(loginNum)) from (select count(*) as loginNum from statistic.req
 select count(*) from statistic.requestInfo ri where ri.requestCode = 'L';
 select count(*) from statistic.requestInfo r join statistic.user u on r.userID = u.USERNAME where LEFT(r.createDate, 4) =  #{yearMonth}  and  u.HR_ORGAN = #{organization} and r.requestCode = 'L';
 ```
+
+---
+## 4주차
