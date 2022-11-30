@@ -170,7 +170,8 @@ root-context.xml 파일에서 다음과 같이 수정
 ###### user 테이블
 ![image](https://user-images.githubusercontent.com/53250432/203909723-67aa4397-c90c-41e8-9925-1e43c460a570.png)
 ##### ‼ [20년도 로그인수 API ]스프링부트, Mybatis, mariadb 연동 -> eclipse 상에서 다시 시도하니 해결
-![image](https://user-images.githubusercontent.com/53250432/204781792-b653af24-2d9d-47f4-8983-4acb91e267f2.png)
+![image](https://user-images.githubusercontent.com/53250432/204781792-b653af24-2d9d-47f4-8983-4acb91e267f2.png)     
+      
 IntelliJ에서 계속 시도하였으나 계속 Invalid bound statement (not found) exception이 전달되고 해결되지 않음.   
 이부분은 추후에 다시 찾아봐야 된다. 
 
