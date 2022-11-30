@@ -175,18 +175,25 @@ root-context.xml 파일에서 다음과 같이 수정
 IntelliJ에서 계속 시도하였으나 계속 Invalid bound statement (not found) exception이 전달되고 해결되지 않음.   
 이부분은 추후에 다시 찾아봐야 된다. 
 
-##### ✔ SW활용 현황 통계 API 구축을 위한 SQL
+##### ✔ SW활용 현황 통계 API 구축을 위한 SQL(수정 완료)
 ```	
 select count(distinct userID) from statistic.requestInfo where LEFT(createDate, 4) = #{yearMonth};
-select count(distinct userID) from statistic.requestInfo where LEFT(createDate, 6) = #{yearMonthDay};
-select round(avg(loginNum)) from (select count(*) as loginNum from statistic.requestInfo ri where ri.requestCode = 'L' group by LEFT(createDate, 4)) as classification;
+select count(distinct userID) from statistic.requestInfo where LEFT(createDate, 6) = #{yearMonthDate};
+select count(*) as loginNum from statistic.requestInfo ri where ri.requestCode = 'L' and LEFT(createDate, 4) = #{yearMonth};
 select count(*) from statistic.requestInfo ri where ri.requestCode = 'L';
 select count(*) from statistic.requestInfo r join statistic.user u on r.userID = u.USERNAME where LEFT(r.createDate, 4) =  #{yearMonth}  and  u.HR_ORGAN = #{organization} and r.requestCode = 'L';
 ```
 
 ---
 ## 4주차
-##### ✔ 최종 SQL
-```
-```
 ##### ✔ 월별 접속자수
+![image](https://user-images.githubusercontent.com/53250432/204834870-d8e7bc69-ecf5-49c6-8965-112dd189cff8.png)
+
+##### ✔ 일자별 접속자 수
+![image](https://user-images.githubusercontent.com/53250432/204835428-e9286728-0c1d-4a76-97d9-cc3fae4bf29e.png)
+
+##### ✔ 평균 하루 로그인 수
+![image](https://user-images.githubusercontent.com/53250432/204845437-7b91bc1b-777e-4443-8492-d54f12a6036d.png)
+
+##### ✔ 부서별 월별 로그인 수
+![image](https://user-images.githubusercontent.com/53250432/204852249-3b50f1ab-7521-4df1-8196-d10350d1f1fc.png)
