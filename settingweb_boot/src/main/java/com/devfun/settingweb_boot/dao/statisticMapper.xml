@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.devfun.settingweb_boot.dao.StatisticMapper">
+ 
+    <select id="selectYearLogin" parameterType="string" resultType="hashMap">
+        select count(*) as totCnt
+        from statistic.requestinfo ri
+        where left(ri.createDate, 2) = #{year};
+    </select>
+    
+    <select id="selectYearMonthAccess" parameterType="string" resultType="hashMap">
+        select count(distinct userID) as totCnt 
+        from statistic.requestInfo 
+        where LEFT(createDate, 4) = #{yearMonth};
+    </select>
+    
+    <select id="selectYearMonthDateAccess" parameterType="string" resultType="hashMap">
+        select count(distinct userID) as totCnt
+        from statistic.requestInfo 
+        where LEFT(createDate, 6) = #{yearMonthDate};
+
+    </select>
+    
+    <select id="selectYearMonthLogin" parameterType="string" resultType="hashMap">
+        select count(*) as loginNum 
+        from statistic.requestInfo ri 
+        where ri.requestCode = 'L' and LEFT(createDate, 4) = #{yearMonth};
+    </select>
+    
+    
+    <select id="selectYearMonthOrganizationLogin" parameterType="string" resultType="hashMap">
+        select count(*) as totCnt 
+        from statistic.requestInfo r 
+        join statistic.user u on r.userID = u.USERNAME 
+        where LEFT(r.createDate, 4) =  #{yearMonth}  and  u.HR_ORGAN = #{organization} and r.requestCode = 'L';
+
+    </select>
+    
+    <select id="selectDateYearLogin" parameterType="string" resultType="com.devfun.settingweb_boot.dto.StaticDto">
+        select ri.createDate as createDate
+        from statistic.requestInfo ri 
+        where ri.requestCode = 'L' and  left(ri.createDate, 2) = #{year} and dayofweek(ri.createDate)!= 1 and dayofweek(ri.createDate)!= 7;
+    </select>
+    
+</mapper>
