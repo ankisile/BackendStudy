@@ -214,7 +214,7 @@ Calendar 클래스를 이용하여 마지막 날짜를 구하고 이 날짜로 �
 ##### ✔ 휴일 구할때 공공 api 이용!     
 https://www.data.go.kr/data/15012690/openapi.do
 
-제공하고 있는 sample code를 이용하여 데이터를 xml 형태로 가져왔고 xml을 json으로 바꿔서 locdate(날짜)를 얻어오고자 했다.
+제공하고 있는 sample code를 이용하여 데이터를 xml 형태로 가져왔고 xml을 json으로 바꿔서 locdate(날짜)를 얻어오고자 했다.      
 [참고자료]    
 https://bohemihan.tistory.com/entry/Open-API-%EA%B5%AD%EA%B2%BD%EC%9D%BC-%EA%B3%B5%ED%9C%B4%EC%9D%BC-%EA%B5%AC%ED%95%98%EA%B8%B0
      
