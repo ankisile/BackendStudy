@@ -218,6 +218,6 @@ https://www.data.go.kr/data/15012690/openapi.do
 [참고자료]    
 https://bohemihan.tistory.com/entry/Open-API-%EA%B5%AD%EA%B2%BD%EC%9D%BC-%EA%B3%B5%ED%9C%B4%EC%9D%BC-%EA%B5%AC%ED%95%98%EA%B8%B0
      
-❓ 궁금한 점    
+❓ **궁금한 점**    
 현재 db에 저장되어 있는 데이터 양이 작아서 for문을 이용하여 공휴일이 아니면 데이터를 가져오는 식으로 했는데 데이터 양이 많아질 경우 어떻게 처리해야 될지 궁금하다.    
 예를 들어, 공공 api의 데이터를 db에 저장해서 sql 쿼리문을 짤때 처리하는지, 혹은 다른 방법으로 처리하는지에 대해 궁금하다.
