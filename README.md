@@ -207,7 +207,17 @@ Calendar 클래스를 이용하여 마지막 날짜를 구하고 이 날짜로 �
 ##### ✔ 휴일을 제외한 로그인 수
 2022년 8월의 휴일을 제외한 로그인수를 가져오고자 하였고 데이터는 다음과 같다.     
 ![image](https://user-images.githubusercontent.com/53250432/205070728-bfe17109-9353-434c-a25d-71e5d2bc2d4a.png)       
-2020년 8월의 로그인은 데이터는 4개임을 확인할 수 있고 8월 15일을 제외하면 3개이다.      
-![image](https://user-images.githubusercontent.com/53250432/205080074-b342e277-a68c-4dfe-ad54-2454a3c70826.png)
+2020년 8월의 로그인은 데이터는 5개임을 확인할 수 있고 휴일을 제거하면 4개이다.      
+![image](https://user-images.githubusercontent.com/53250432/205095467-c6c7b3b1-46b1-4c47-ab7d-307830796391.png)
+     
+      
+##### ✔ 휴일 구할때 공공 api 이용!     
+https://www.data.go.kr/data/15012690/openapi.do
 
-
+제공하고 있는 sample code를 이용하여 데이터를 xml 형태로 가져왔고 xml을 json으로 바꿔서 locdate(날짜)를 얻어오고자 했다.
+[참고자료]    
+https://bohemihan.tistory.com/entry/Open-API-%EA%B5%AD%EA%B2%BD%EC%9D%BC-%EA%B3%B5%ED%9C%B4%EC%9D%BC-%EA%B5%AC%ED%95%98%EA%B8%B0
+     
+❓ 궁금한 점    
+현재 db에 저장되어 있는 데이터 양이 작아서 for문을 이용하여 공휴일이 아니면 데이터를 가져오는 식으로 했는데 데이터 양이 많아질 경우 어떻게 처리해야 될지 궁금하다.    
+예를 들어, 공공 api의 데이터를 db에 저장해서 sql 쿼리문을 짤때 처리하는지, 혹은 다른 방법으로 처리하는지에 대해 궁금하다.
