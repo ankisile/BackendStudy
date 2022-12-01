@@ -177,7 +177,9 @@ IntelliJ에서 계속 시도하였으나 계속 Invalid bound statement (not fou
 
 ##### ✔ SW활용 현황 통계 API 구축을 위한 SQL(수정 완료)
 ```	
+# 월별 접속자수
 select count(distinct userID) from statistic.requestInfo where LEFT(createDate, 4) = #{yearMonth};
+# 일자별 접속자 수 
 select count(distinct userID) from statistic.requestInfo where LEFT(createDate, 6) = #{yearMonthDate};
 select count(*) as loginNum from statistic.requestInfo ri where ri.requestCode = 'L' and LEFT(createDate, 4) = #{yearMonth};
 select count(*) from statistic.requestInfo ri where ri.requestCode = 'L';
@@ -194,6 +196,9 @@ select count(*) from statistic.requestInfo r join statistic.user u on r.userID =
 
 ##### ✔ 평균 하루 로그인 수
 ![image](https://user-images.githubusercontent.com/53250432/204845437-7b91bc1b-777e-4443-8492-d54f12a6036d.png)
-
+   
+Calendar 클래스를 이용하여 마지막 날짜를 구하고 이 날짜로 로그인수를 나눠주었다.
 ##### ✔ 부서별 월별 로그인 수
 ![image](https://user-images.githubusercontent.com/53250432/204852249-3b50f1ab-7521-4df1-8196-d10350d1f1fc.png)
+
+##### ✔
