@@ -183,7 +183,7 @@ select count(distinct userID) from statistic.requestInfo where LEFT(createDate, 
 select count(distinct userID) from statistic.requestInfo where LEFT(createDate, 6) = #{yearMonthDate};
 # 평균 하루 로그인 수
 select count(*) as loginNum from statistic.requestInfo ri where ri.requestCode = 'L' and LEFT(createDate, 4) = #{yearMonth};
-# 휴일을 제외한 로그인 수
+# 주말 제외한 로그인 수
 select ri.createDate as createDate from statistic.requestInfo ri where ri.requestCode = 'L' and  left(ri.createDate, 4) = #{yearMonth} and dayofweek(ri.createDate)!= 1 and dayofweek(ri.createDate)!= 7;
 # 부서별 월별 로그인 수
 select count(*) from statistic.requestInfo r join statistic.user u on r.userID = u.USERNAME where LEFT(r.createDate, 4) =  #{yearMonth}  and  u.HR_ORGAN = #{organization} and r.requestCode = 'L';
